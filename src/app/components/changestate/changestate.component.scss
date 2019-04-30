@@ -1,0 +1,9 @@
+h1{
+  color:red;
+  &.gray{
+    color:gray;
+  }
+  &.green{
+    color:green;
+  }
+}
