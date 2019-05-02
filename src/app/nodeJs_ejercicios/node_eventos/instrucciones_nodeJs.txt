@@ -1,0 +1,11 @@
+Para correr el programa:
+
+desde la consola, en la carpeta de los archivos que queremos correr...
+
+-- para correr el API con el mensaje "hola mundo":
+
+   node app.js
+
+-- para correr el ejercicio de eventos:
+
+   node events.js

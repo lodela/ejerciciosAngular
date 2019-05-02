@@ -1,0 +1,11 @@
+{
+  "name": "nodejs_events",
+  "version": "1.0.0",
+  "description": "ejercicios de event emitters",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "norberto lopez",
+  "license": "ISC"
+}
