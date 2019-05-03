@@ -3,10 +3,10 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\components\\changestate",
     "\\src\\app\\nodeJs_ejercicios",
-    "\\src\\app\\nodeJs_ejercicios\\node_eventos"
+    "\\src\\app\\nodeJs_ejercicios\\math.module",
+    "\\src\\assets\\files"
   ],
-  "SelectedNode": "\\src\\app\\nodeJs_ejercicios\\node_eventos\\instrucciones_nodeJs.txt",
+  "SelectedNode": "\\src\\app\\nodeJs_ejercicios\\math.module\\package.json",
   "PreviewInSolutionExplorer": false
 }
