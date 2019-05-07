@@ -4,8 +4,7 @@
     "\\src",
     "\\src\\app",
     "\\src\\app\\nodeJs_ejercicios",
-    "\\src\\app\\nodeJs_ejercicios\\math.module",
-    "\\src\\assets\\files"
+    "\\src\\app\\nodeJs_ejercicios\\math.module"
   ],
   "SelectedNode": "\\src\\app\\nodeJs_ejercicios\\math.module\\package.json",
   "PreviewInSolutionExplorer": false

@@ -1,3 +1,5 @@
+const Math = new Object;
+
 function suma(a, b) {
   return a + b;
 };
@@ -16,7 +18,9 @@ function divide(a, b) {
   }
 };
 
-exports.suma   = suma;
-exports.resta  = resta;
-exports.multi  = multi;
-exports.divide = divide;
+Math.suma       = suma;
+Math.resta      = resta;
+Math.multiplica = multi;
+Math.divide     = divide;
+
+module.exports = Math;

@@ -1,3 +1,7 @@
-const math = require('./math');
+const Math = require('./math.component');
+console.log(Math.suma(2,3));
 
-console.log(math.suma(2,2));
+//console.reset();
+//console.log();
+//console.warning();
+//console.error();
