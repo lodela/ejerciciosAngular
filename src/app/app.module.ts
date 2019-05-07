@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { ChangestateComponent } from './components/changestate/changestate.component';
 import { PersonaComponent } from './components/personas/persona.component';
+import { AddPersonaComponent } from './components/addPersona/addPersona.component';
 
 
 
@@ -15,7 +16,8 @@ import { PersonaComponent } from './components/personas/persona.component';
     AppComponent,
     NavbarComponent,
     ChangestateComponent,
-    PersonaComponent
+    PersonaComponent,
+    AddPersonaComponent
   ],
   imports: [
     BrowserModule,
