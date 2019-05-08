@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'ngEjerciciosGMF';
+  personas:string[] = ['Juan', 'pedro', 'pablo', 'hugo', 'paco', 'luis'];
+
 }

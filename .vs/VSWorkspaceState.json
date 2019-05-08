@@ -3,9 +3,9 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\nodeJs_ejercicios",
-    "\\src\\app\\nodeJs_ejercicios\\math.module"
+    "\\src\\app\\components",
+    "\\src\\app\\components\\personas"
   ],
-  "SelectedNode": "\\src\\app\\nodeJs_ejercicios\\math.module\\package.json",
+  "SelectedNode": "\\src\\app\\components\\addPersona",
   "PreviewInSolutionExplorer": false
 }
