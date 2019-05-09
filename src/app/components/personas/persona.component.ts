@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-personas',
@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['persona.component.scss']
 })
 export class PersonaComponent {
-  nombres = ['norberto', 'Eduardo', 'Cesar', 'Christian', 'Vicente'];
+  nombres = ['norberto', 'Eduardo', 'Cesar', 'Christian', 'Vicente','Edgar'];
+  @Input() personasList:string[];
 }
+
+
+
+
+
+
+
+

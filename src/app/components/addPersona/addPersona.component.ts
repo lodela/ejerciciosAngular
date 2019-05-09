@@ -1,19 +1,24 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-addPersona',
   templateUrl: './addPersona.component.html',
   styleUrls: ['./addPersona.component.scss']
 })
-export class AddPersonaComponent implements OnInit {
+export class AddPersonaComponent {
+  
+  public enteredPersonaName:string = 'algo';
+  datos = {
+    personaName : 'este es el objeto'
+  }
+  @Output() personCreated = new EventEmitter<any>();
 
   constructor() { }
 
-  ngOnInit() {
-  }
-
-  onAddPersona(newName:string) {
-    console.log('new name: ', newName);
+  onAddPersona() {
+    // console.log('new name: ', newName);
+    this.personCreated.emit(this.datos);
+    this.enteredPersonaName = '';
   }
 
 }

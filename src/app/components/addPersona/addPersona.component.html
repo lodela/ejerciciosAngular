@@ -1,13 +1,17 @@
 <hr />
 <h3>componente: add persona</h3>
 <form>
-  <label for="name">Name</label>
+  <label for="name">Name: {{enteredPersonaName}}</label>
+  <br>
   <input type="text"
          id="name"
          name="name"
          value=""
-         #newName/>
+         [(ngModel)]="datos.personaName"
+         />
+  <br>
+  {{datos | json}}
   <button type="button"
           name="button"
-          (click)="onAddPersona(newName.value)">Agregar persona</button>
+          (click)="onAddPersona()">Agregar persona</button>
 </form>

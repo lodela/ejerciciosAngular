@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
@@ -8,8 +9,6 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
 import { ChangestateComponent } from './components/changestate/changestate.component';
 import { PersonaComponent } from './components/personas/persona.component';
 import { AddPersonaComponent } from './components/addPersona/addPersona.component';
-
-
 
 @NgModule({
   declarations: [
@@ -21,7 +20,8 @@ import { AddPersonaComponent } from './components/addPersona/addPersona.componen
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
