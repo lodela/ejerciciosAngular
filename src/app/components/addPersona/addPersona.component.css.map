@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAAA,WAAW;EACP,MAAM,EAAC,aAAa;EACpB,KAAK,EAAC,IAAI;EAEV,iBAAK;IACD,MAAM,EAAE,UAAU",
+"mappings": "AAAA,WAAW;EACP,MAAM,EAAC,qBAAqB;EAC5B,KAAK,EAAC,IAAI;EAEV,iBAAK;IACD,MAAM,EAAE,UAAU",
 "sources": ["addPersona.component.scss"],
 "names": [],
 "file": "addPersona.component.css"

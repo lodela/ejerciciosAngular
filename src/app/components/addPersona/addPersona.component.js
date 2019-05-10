@@ -15,7 +15,6 @@ var AddPersonaComponent = (function () {
         this.personCreated = new core_1.EventEmitter();
     }
     AddPersonaComponent.prototype.onAddPersona = function () {
-        // console.log('new name: ', newName);
         this.personCreated.emit(this.datos);
         this.datos.personaName = '';
     };

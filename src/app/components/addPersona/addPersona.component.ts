@@ -16,7 +16,6 @@ export class AddPersonaComponent {
   constructor() { }
 
   onAddPersona() {
-    // console.log('new name: ', newName);
     this.personCreated.emit(this.datos);
     this.datos.personaName = '';
   }
