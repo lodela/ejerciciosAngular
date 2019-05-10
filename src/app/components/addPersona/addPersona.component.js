@@ -17,7 +17,7 @@ var AddPersonaComponent = (function () {
     AddPersonaComponent.prototype.onAddPersona = function () {
         // console.log('new name: ', newName);
         this.personCreated.emit(this.datos);
-        this.enteredPersonaName = '';
+        this.datos.personaName = '';
     };
     __decorate([
         core_1.Output()

@@ -2,7 +2,7 @@
 <hr>
 <changeState>Loading changeState</changeState>
 <hr>
-<app-personas>loading personas</app-personas>
+<app-personas [personasList]="personas">loading personas</app-personas>
 <app-addPersona (personCreated)="onPersonCreated($event)"></app-addPersona>
 <hr>
 

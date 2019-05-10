@@ -7,13 +7,23 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ngEjerciciosGMF';
-  public personas:string[] = ['Juan', 'pedro', 'pablo', 'hugo', 'paco', 'luis', 'norberto'];
+  
+  personas:string[] = ['Juan', 'pedro', 'pablo', 'hugo', 'paco', 'luis', 'norberto'];
   
   onPersonCreated(datos:any){
-    // this.personas.push(name);
-    console.log('holoa desde el root component');
-    console.log(datos);
-    console.log('fin del programa... gracias');
+    let newPersona:string = datos.personaName;
+    let personasCleanArr  = this.personas;
+        personasCleanArr.push(newPersona);
+        personasCleanArr = personasCleanArr.filter(this.distinct);
+    this.personas = personasCleanArr;
+    console.log(personasCleanArr);
+    
   }
-}
+  
+  distinct = (value, index, self) =>{
+    return self.indexOf(value) === index;
+  }
+} 
+
+
 
