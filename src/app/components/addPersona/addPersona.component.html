@@ -27,7 +27,7 @@
              #email = "ngModel"
              [email]="true"
              required
-             [ngClass]="name.errors? 'danger':'success'"/>
+             [ngClass]="email.errors? 'danger':'success'"/>
       <div class="error danger"
            *ngIf="!email.valid && email.touched">Email es requerido</div>
       <button type="submit"
