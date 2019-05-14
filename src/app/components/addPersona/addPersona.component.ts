@@ -6,6 +6,7 @@ import { NgForm } from '@angular/forms';
   templateUrl: './addPersona.component.html',
   styleUrls: ['./addPersona.component.scss']
 })
+
 export class AddPersonaComponent {
   
   public enteredPersonaName:string = 'algo';
@@ -15,14 +16,12 @@ export class AddPersonaComponent {
   @Output() personCreated = new EventEmitter<any>();
 
   constructor() { }
-
+  
   onAddPersona(data:NgForm) {
-    console.log(data);
-    // this.personCreated.emit(this.datos);
-    // this.datos.personaName = '';
-  }
-  enviarFormulario(value:NgForm){
-    console.log(value);
+    console.log(data.value);
+    this.personCreated.emit(this.datos);
+    this.datos.personaName = '';
+    data.reset();
   }
 
 }

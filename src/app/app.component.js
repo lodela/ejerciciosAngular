@@ -9,7 +9,7 @@ var core_1 = require('@angular/core');
 var AppComponent = (function () {
     function AppComponent() {
         this.title = 'ngEjerciciosGMF';
-        this.personas = ['Juan', 'pedro', 'pablo', 'hugo', 'paco', 'luis', 'norberto'];
+        this.personas = ['Juan', 'pedro', 'pablo', 'hugo', 'paco', 'luis'];
         this.distinct = function (value, index, self) {
             return self.indexOf(value) === index;
         };

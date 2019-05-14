@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'ngEjerciciosGMF';
   
-  personas:string[] = ['Juan', 'pedro', 'pablo', 'hugo', 'paco', 'luis', 'norberto'];
+  personas:string[] = ['Juan', 'pedro', 'pablo', 'hugo', 'paco', 'luis'];
   
   onPersonCreated(datos:any){
     let newPersona:string = datos.personaName;

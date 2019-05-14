@@ -15,12 +15,10 @@ var AddPersonaComponent = (function () {
         this.personCreated = new core_1.EventEmitter();
     }
     AddPersonaComponent.prototype.onAddPersona = function (data) {
-        console.log(data);
-        // this.personCreated.emit(this.datos);
-        // this.datos.personaName = '';
-    };
-    AddPersonaComponent.prototype.enviarFormulario = function (value) {
-        console.log(value);
+        console.log(data.value);
+        this.personCreated.emit(this.datos);
+        this.datos.personaName = '';
+        data.reset();
     };
     __decorate([
         core_1.Output()
