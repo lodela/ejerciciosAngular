@@ -1,21 +1,40 @@
 <hr />
 <h3>componente: add persona</h3>
 <div class="container">
-  <form class="row">
+  <form class="row"
+        #formularioPersona = "ngForm"
+        (ngSubmit)="enviarFormulario(formularioPersona.value)">
     <div class="form-group">
       <label for="name">Name: {{datos.personaName}}</label>
       <input type="text"
-           id="name"
-           class="form-control"
-           name="name"
-           value=""
-           [(ngModel)]="datos.personaName"/>
-      <button type="button"
+             id="name"
+             class="form-control"
+             name="name"
+             #name = "ngModel"
+             [(ngModel)]="datos.personaName"
+             required
+             minlength="4"
+             [ngClass]="name.errors? 'danger':'success'"/>
+      <div class="error danger"
+           *ngIf="!name.valid && name.touched">Nombre es requerido</div>
+      <hr>
+      <label for="mail">Escriba su email</label>
+      <input type="text"
+             id="email"
+             class="form-control"
+             name="email"
+             ngModel
+             #email = "ngModel"
+             [email]="true"
+             required
+             [ngClass]="name.errors? 'danger':'success'"/>
+      <div class="error danger"
+           *ngIf="!email.valid && email.touched">Email es requerido</div>
+      <button type="submit"
             class="btn btn-primary"
             name="button"
-            (click)="onAddPersona()">Agregar persona</button>
+            [disabled]="!formularioPersona.valid"
+            (click)="onAddPersona(formularioPersona)">Agregar persona</button>
     </div>
-    {{datos | json}}
-    
   </form>
 </div>

@@ -10,13 +10,17 @@ var AddPersonaComponent = (function () {
     function AddPersonaComponent() {
         this.enteredPersonaName = 'algo';
         this.datos = {
-            personaName: 'este es el objeto'
+            personaName: ''
         };
         this.personCreated = new core_1.EventEmitter();
     }
-    AddPersonaComponent.prototype.onAddPersona = function () {
-        this.personCreated.emit(this.datos);
-        this.datos.personaName = '';
+    AddPersonaComponent.prototype.onAddPersona = function (data) {
+        console.log(data);
+        // this.personCreated.emit(this.datos);
+        // this.datos.personaName = '';
+    };
+    AddPersonaComponent.prototype.enviarFormulario = function (value) {
+        console.log(value);
     };
     __decorate([
         core_1.Output()
