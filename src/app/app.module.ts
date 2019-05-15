@@ -1,8 +1,14 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+//modules
+import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
 
+//services
+import { PersonaService } from './services/personasList.service';
+
+// components
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { ChangestateComponent } from './components/changestate/changestate.component';
@@ -18,10 +24,13 @@ import { AddPersonaComponent } from './components/addPersona/addPersona.componen
     AddPersonaComponent
   ],
   imports: [
+    AppRoutingModule,
     BrowserModule,
     FormsModule
   ],
-  providers: [],
+  providers: [
+    PersonaService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

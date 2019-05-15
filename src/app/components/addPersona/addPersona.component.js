@@ -7,22 +7,17 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 var core_1 = require('@angular/core');
 var AddPersonaComponent = (function () {
-    function AddPersonaComponent() {
+    function AddPersonaComponent(newPersona) {
+        this.newPersona = newPersona;
         this.enteredPersonaName = 'algo';
         this.datos = {
             personaName: ''
         };
-        this.personCreated = new core_1.EventEmitter();
     }
     AddPersonaComponent.prototype.onAddPersona = function (data) {
-        console.log(data.value);
-        this.personCreated.emit(this.datos);
-        this.datos.personaName = '';
-        data.reset();
+        console.log(data.value.name);
+        this.newPersona.onAddPerson(data.value.name);
     };
-    __decorate([
-        core_1.Output()
-    ], AddPersonaComponent.prototype, "personCreated");
     AddPersonaComponent = __decorate([
         core_1.Component({
             selector: 'app-addPersona',

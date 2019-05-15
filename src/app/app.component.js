@@ -9,19 +9,18 @@ var core_1 = require('@angular/core');
 var AppComponent = (function () {
     function AppComponent() {
         this.title = 'ngEjerciciosGMF';
-        this.personas = ['Juan', 'pedro', 'pablo', 'hugo', 'paco', 'luis'];
+        // onPersonCreated(datos:any){
+        //   let newPersona:string = datos.personaName;
+        //   let personasCleanArr  = this.personas;
+        //       personasCleanArr.push(newPersona);
+        //       personasCleanArr = personasCleanArr.filter(this.distinct);
+        //   this.personas = personasCleanArr;
+        //   console.log(personasCleanArr);
+        // }
         this.distinct = function (value, index, self) {
             return self.indexOf(value) === index;
         };
     }
-    AppComponent.prototype.onPersonCreated = function (datos) {
-        var newPersona = datos.personaName;
-        var personasCleanArr = this.personas;
-        personasCleanArr.push(newPersona);
-        personasCleanArr = personasCleanArr.filter(this.distinct);
-        this.personas = personasCleanArr;
-        console.log(personasCleanArr);
-    };
     AppComponent = __decorate([
         core_1.Component({
             selector: 'app-root',

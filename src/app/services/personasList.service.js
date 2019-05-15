@@ -6,20 +6,19 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = require('@angular/core');
-var PersonaComponent = (function () {
-    function PersonaComponent(personas) {
-        this.personas = personas;
+var PersonaService = (function () {
+    function PersonaService() {
+        this.personas = ['Pedro', 'Pablo Marmol', 'hugo', 'paco', 'luis'];
     }
-    PersonaComponent.prototype.ngOnInit = function () {
-        this.personasList = this.personas.personas;
+    PersonaService.prototype.onAddPerson = function (name) {
+        console.log('se activó el servicio');
+        console.log(name);
+        this.personas.push(name);
+        console.log(this.personas);
     };
-    PersonaComponent = __decorate([
-        core_1.Component({
-            selector: 'app-personas',
-            templateUrl: './persona.component.html',
-            styleUrls: ['persona.component.scss']
-        })
-    ], PersonaComponent);
-    return PersonaComponent;
+    PersonaService = __decorate([
+        core_1.Injectable({ providedIn: 'root' })
+    ], PersonaService);
+    return PersonaService;
 }());
-exports.PersonaComponent = PersonaComponent;
+exports.PersonaService = PersonaService;

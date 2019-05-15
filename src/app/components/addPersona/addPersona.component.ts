@@ -1,5 +1,6 @@
-import { Component, Output, EventEmitter } from '@angular/core';
+import { Component } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { PersonaService } from '../../services/personasList.service';
 
 @Component({
   selector: 'app-addPersona',
@@ -13,16 +14,15 @@ export class AddPersonaComponent {
   datos = {
     personaName : ''
   }
-  @Output() personCreated = new EventEmitter<any>();
 
-  constructor() { }
+  constructor(private newPersona:PersonaService) { }
   
   onAddPersona(data:NgForm) {
-    console.log(data.value);
-    this.personCreated.emit(this.datos);
-    this.datos.personaName = '';
-    data.reset();
+    console.log(data.value.name);
+    this.newPersona.onAddPerson(data.value.name);
   }
 
 }
+
+
 
