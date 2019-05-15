@@ -10,7 +10,8 @@ import { PersonaService } from '../../services/personasList.service';
 
 export class AddPersonaComponent {
   
-  public enteredPersonaName:string = 'algo';
+  private saved:boolean = false;
+  
   datos = {
     personaName : ''
   }
@@ -20,6 +21,8 @@ export class AddPersonaComponent {
   onAddPersona(data:NgForm) {
     console.log(data.value.name);
     this.newPersona.onAddPerson(data.value.name);
+    data.reset();
+    this.saved = true;
   }
 
 }

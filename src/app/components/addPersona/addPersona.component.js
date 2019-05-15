@@ -9,7 +9,7 @@ var core_1 = require('@angular/core');
 var AddPersonaComponent = (function () {
     function AddPersonaComponent(newPersona) {
         this.newPersona = newPersona;
-        this.enteredPersonaName = 'algo';
+        this.saved = false;
         this.datos = {
             personaName: ''
         };
@@ -17,6 +17,8 @@ var AddPersonaComponent = (function () {
     AddPersonaComponent.prototype.onAddPersona = function (data) {
         console.log(data.value.name);
         this.newPersona.onAddPerson(data.value.name);
+        data.reset();
+        this.saved = true;
     };
     AddPersonaComponent = __decorate([
         core_1.Component({
