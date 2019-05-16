@@ -5,9 +5,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+//modules
 var platform_browser_1 = require('@angular/platform-browser');
 var core_1 = require('@angular/core');
-//modules
 var app_routing_module_1 = require('./app-routing.module');
 var forms_1 = require('@angular/forms');
 //services
@@ -18,6 +18,7 @@ var navbar_component_1 = require('./shared/navbar/navbar.component');
 var changestate_component_1 = require('./components/changestate/changestate.component');
 var persona_component_1 = require('./components/personas/persona.component');
 var addPersona_component_1 = require('./components/addPersona/addPersona.component');
+var home_component_1 = require('./components/home/home.component');
 var AppModule = (function () {
     function AppModule() {
     }
@@ -28,7 +29,8 @@ var AppModule = (function () {
                 navbar_component_1.NavbarComponent,
                 changestate_component_1.ChangestateComponent,
                 persona_component_1.PersonaComponent,
-                addPersona_component_1.AddPersonaComponent
+                addPersona_component_1.AddPersonaComponent,
+                home_component_1.HomeComponent
             ],
             imports: [
                 app_routing_module_1.AppRoutingModule,

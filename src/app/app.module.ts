@@ -1,7 +1,6 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-
 //modules
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule }      from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
 
@@ -14,6 +13,7 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
 import { ChangestateComponent } from './components/changestate/changestate.component';
 import { PersonaComponent } from './components/personas/persona.component';
 import { AddPersonaComponent } from './components/addPersona/addPersona.component';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +21,8 @@ import { AddPersonaComponent } from './components/addPersona/addPersona.componen
     NavbarComponent,
     ChangestateComponent,
     PersonaComponent,
-    AddPersonaComponent
+    AddPersonaComponent,
+    HomeComponent
   ],
   imports: [
     AppRoutingModule,
