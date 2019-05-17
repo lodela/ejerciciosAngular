@@ -11,11 +11,10 @@ var DatospersonaleComponent = (function () {
         this.user = user;
     }
     DatospersonaleComponent.prototype.ngOnInit = function () {
-        this.getPersonalData;
+        this.get_PersonalData(1);
     };
-    DatospersonaleComponent.prototype.getPersonalData = function (id) {
+    DatospersonaleComponent.prototype.get_PersonalData = function (id) {
         var _this = this;
-        id = (id) ? id : 5;
         this.user.getPersonalData(id)
             .then(function (respuesta) { return _this.data = respuesta; });
     };

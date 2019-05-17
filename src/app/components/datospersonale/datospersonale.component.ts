@@ -16,11 +16,10 @@ export class DatospersonaleComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.getPersonalData;
+    this.get_PersonalData(1);
   }
   
-  getPersonalData(id){
-    id = (id)?id:5;
+  get_PersonalData(id:number){
     this.user.getPersonalData(id)
              .then(respuesta => this.data = respuesta);
   }

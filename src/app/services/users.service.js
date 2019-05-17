@@ -19,7 +19,8 @@ var UsersService = (function () {
             .catch(this.ocurrioUnError);
     };
     UsersService.prototype.getPersonalData = function (id) {
-        return this.http.get(this.url + "/users>/" + id)
+        console.log(id);
+        return this.http.get(this.url + "/users/" + id)
             .toPromise()
             .then(function (res) { return res; })
             .then(function (res) { return res; })

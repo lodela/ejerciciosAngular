@@ -21,7 +21,8 @@ export class UsersService{
     }
     
     getPersonalData(id:number){
-        return this.http.get<any>(`${this.url}/users>/${id}`)
+        console.log(id);
+        return this.http.get<any>(`${this.url}/users/${id}`)
                     .toPromise()
                     .then(res => <Users[]> res)
                     .then(res => {return res})
