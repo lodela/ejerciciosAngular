@@ -1,11 +1,14 @@
 //modules
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule }      from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
 
+
 //services
 import { PersonaService } from './services/personasList.service';
+import { UsersService } from './services/users.service';
 
 // components
 import { AppComponent } from './app.component';
@@ -14,6 +17,7 @@ import { ChangestateComponent } from './components/changestate/changestate.compo
 import { PersonaComponent } from './components/personas/persona.component';
 import { AddPersonaComponent } from './components/addPersona/addPersona.component';
 import { HomeComponent } from './components/home/home.component';
+import { DatospersonaleComponent } from './components/datospersonale/datospersonale.component';
 
 @NgModule({
   declarations: [
@@ -22,15 +26,18 @@ import { HomeComponent } from './components/home/home.component';
     ChangestateComponent,
     PersonaComponent,
     AddPersonaComponent,
-    HomeComponent
+    HomeComponent,
+    DatospersonaleComponent
   ],
   imports: [
-    AppRoutingModule,
     BrowserModule,
+    HttpClientModule,
+    AppRoutingModule,
     FormsModule
   ],
   providers: [
-    PersonaService
+    PersonaService,
+    UsersService
   ],
   bootstrap: [AppComponent]
 })

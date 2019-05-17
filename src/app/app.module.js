@@ -7,11 +7,13 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 //modules
 var platform_browser_1 = require('@angular/platform-browser');
+var http_1 = require('@angular/common/http');
 var core_1 = require('@angular/core');
 var app_routing_module_1 = require('./app-routing.module');
 var forms_1 = require('@angular/forms');
 //services
 var personasList_service_1 = require('./services/personasList.service');
+var users_service_1 = require('./services/users.service');
 // components
 var app_component_1 = require('./app.component');
 var navbar_component_1 = require('./shared/navbar/navbar.component');
@@ -33,12 +35,14 @@ var AppModule = (function () {
                 home_component_1.HomeComponent
             ],
             imports: [
-                app_routing_module_1.AppRoutingModule,
                 platform_browser_1.BrowserModule,
+                http_1.HttpClientModule,
+                app_routing_module_1.AppRoutingModule,
                 forms_1.FormsModule
             ],
             providers: [
-                personasList_service_1.PersonaService
+                personasList_service_1.PersonaService,
+                users_service_1.UsersService
             ],
             bootstrap: [app_component_1.AppComponent]
         })

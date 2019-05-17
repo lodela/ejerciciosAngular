@@ -8,7 +8,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var core_1 = require('@angular/core');
 var PersonaService = (function () {
     function PersonaService() {
-        this.personas = ['Pedro', 'Pablo Marmol', 'hugo', 'paco', 'luis'];
+        this.personas = ['Pedro PicaPiedra', 'Pablo Marmol', 'hugo', 'paco', 'luis'];
     }
     PersonaService.prototype.onAddPerson = function (name) {
         console.log('se activó el servicio');

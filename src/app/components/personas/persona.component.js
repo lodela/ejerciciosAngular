@@ -7,11 +7,15 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 var core_1 = require('@angular/core');
 var PersonaComponent = (function () {
-    function PersonaComponent(personas) {
+    function PersonaComponent(personas, users) {
         this.personas = personas;
+        this.users = users;
     }
     PersonaComponent.prototype.ngOnInit = function () {
+        var _this = this;
         this.personasList = this.personas.personas;
+        this.users.getUsers()
+            .then(function (respuesta) { return _this.usersList = respuesta; });
     };
     PersonaComponent = __decorate([
         core_1.Component({
