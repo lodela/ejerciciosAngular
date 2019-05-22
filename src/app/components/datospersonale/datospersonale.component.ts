@@ -3,9 +3,9 @@ import { Users }             from '../../models/useres.model';
 import { UsersService }      from '../../services/users.service';
 
 @Component({
-  selector: 'app-datospersonale',
+  selector   : 'app-datospersonale',
   templateUrl: './datospersonale.component.html',
-  styleUrls: ['./datospersonale.component.scss']
+  styleUrls  : ['./datospersonale.component.scss']
 })
 export class DatospersonaleComponent implements OnInit {
   
@@ -16,7 +16,7 @@ export class DatospersonaleComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.get_PersonalData(1);
+    this.get_PersonalData(3);
   }
   
   get_PersonalData(id:number){

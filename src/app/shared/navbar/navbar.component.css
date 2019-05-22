@@ -1,0 +1,12 @@
+h1 {
+  color: blue; }
+
+#navbarSupportedContent {
+  display: block;
+  width: 50%; }
+  #navbarSupportedContent ul li {
+    position: relative;
+    display: block;
+    float: left; }
+
+/*# sourceMappingURL=navbar.component.css.map */

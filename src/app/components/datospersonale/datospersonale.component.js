@@ -11,7 +11,7 @@ var DatospersonaleComponent = (function () {
         this.user = user;
     }
     DatospersonaleComponent.prototype.ngOnInit = function () {
-        this.get_PersonalData(1);
+        this.get_PersonalData(3);
     };
     DatospersonaleComponent.prototype.get_PersonalData = function (id) {
         var _this = this;

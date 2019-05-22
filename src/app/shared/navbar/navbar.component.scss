@@ -1,3 +1,15 @@
 h1{
   color:blue;
 }
+
+#navbarSupportedContent{
+    display: block;
+    width: 50%;
+    ul{
+        li{
+            position:relative;
+            display:block;
+            float:left;
+        }
+    }
+}

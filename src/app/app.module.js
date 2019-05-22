@@ -21,6 +21,7 @@ var changestate_component_1 = require('./components/changestate/changestate.comp
 var persona_component_1 = require('./components/personas/persona.component');
 var addPersona_component_1 = require('./components/addPersona/addPersona.component');
 var home_component_1 = require('./components/home/home.component');
+var datospersonale_component_1 = require('./components/datospersonale/datospersonale.component');
 var AppModule = (function () {
     function AppModule() {
     }
@@ -32,7 +33,8 @@ var AppModule = (function () {
                 changestate_component_1.ChangestateComponent,
                 persona_component_1.PersonaComponent,
                 addPersona_component_1.AddPersonaComponent,
-                home_component_1.HomeComponent
+                home_component_1.HomeComponent,
+                datospersonale_component_1.DatospersonaleComponent
             ],
             imports: [
                 platform_browser_1.BrowserModule,
