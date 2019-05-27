@@ -19,6 +19,7 @@ import { AddPersonaComponent } from './components/addPersona/addPersona.componen
 import { HomeComponent } from './components/home/home.component';
 import { DatospersonaleComponent } from './components/datospersonale/datospersonale.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
